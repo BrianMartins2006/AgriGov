@@ -244,28 +244,45 @@
 
   function ligarKpis() {
     var secao = $('#kpis')
-    var obs = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (!entry.isIntersecting) return
-          obs.unobserve(entry.target)
-          entry.target.querySelectorAll('.kpi').forEach(function (k) {
-            var meta = parseInt(k.getAttribute('data-meta'), 10)
-            var sufixo = k.getAttribute('data-sufixo') || ''
-            var barra = k.querySelector('.barra__preenchimento')
-            var marcador = k.querySelector('.barra__marcador')
-            var valor = k.querySelector('.kpi__valor')
-            animarValor(valor, meta, sufixo)
-            setTimeout(function () {
-              barra.style.width = k.getAttribute('data-barra') + '%'
-              marcador.style.left = k.getAttribute('data-marcador') + '%'
-            }, 150)
+    if (!secao) return
+    var animado = false
+
+    function animar() {
+      if (animado) return
+      animado = true
+      secao.querySelectorAll('.kpi').forEach(function (k) {
+        var meta = parseInt(k.getAttribute('data-meta'), 10)
+        var sufixo = k.getAttribute('data-sufixo') || ''
+        var barra = k.querySelector('.barra__preenchimento')
+        var marcador = k.querySelector('.barra__marcador')
+        var valor = k.querySelector('.kpi__valor')
+        animarValor(valor, meta, sufixo)
+        setTimeout(function () {
+          barra.style.width = k.getAttribute('data-barra') + '%'
+          marcador.style.left = k.getAttribute('data-marcador') + '%'
+        }, 150)
+      })
+    }
+
+    if ('IntersectionObserver' in window) {
+      var obs = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              animar()
+              obs.disconnect()
+            }
           })
-        })
-      },
-      { threshold: 0.25 }
-    )
-    obs.observe(secao)
+        },
+        { threshold: 0.12 }
+      )
+      obs.observe(secao)
+    } else {
+      animar()
+    }
+
+    /* fallback de segurança: garante que os KPIs nunca fiquem zerados */
+    window.setTimeout(animar, 2500)
   }
 
   /* ---------- navegação: seção ativa ---------- */

@@ -1,7 +1,3 @@
-/* ==================== AgriGov Software Solutions — conteúdo editável ====================
-   Altere os textos abaixo e o site se atualiza automaticamente.
-   Campo "icono" aceita: target | lock | shield | gauge | layers | plug | cloud | box |
-   git | monitor | db | api | code | chip | leaf | trend | wink | flask | calendar | clock | chat */
 
 var DADOS = {
   empresa: {
@@ -148,8 +144,4 @@ var DADOS = {
     },
   ],
 
-  github: {
-    usuario: '<usuario>',
-    repositorio: 'agrigov',
-  },
 }
