@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-tema="claro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgriGov Software Solutions — Governança de TI para o Agronegócio</title>
+    <meta
+      name="description"
+      content="AgriGov Software Solutions: desenvolvimento de software sob medida e soluções SaaS para a gestão do agronegócio, com governança de TI, segurança de dados e conformidade LGPD."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='2' width='28' height='28' rx='7' fill='%231e5438'/%3E%3Crect x='7' y='7' width='18' height='18' rx='3' fill='none' stroke='%23f6f3ec'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23c79a3b'/%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <div class="barra-topo">
+      <span>IFSULDEMINAS · Campus Machado — Gestão de Sistemas da Informação</span>
+      <span>Atividade: Artigos</span>
+    </div>
+
+    <header class="nav" id="nav">
+      <div class="nav__inner">
+        <a class="marca" href="#inicio" aria-label="AgriGov — início">
+          <svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true">
+            <rect x="2" y="2" width="28" height="28" rx="7" fill="none" stroke="currentColor" stroke-width="2" />
+            <rect x="9" y="9" width="14" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.6" />
+            <circle cx="16" cy="16" r="2.6" fill="currentColor" />
+          </svg>
+          <span class="marca__texto">
+            AGRI<span>GOV</span>
+            <em>Software Solutions</em>
+          </span>
+        </a>
+
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#empresa">Empresa</a></li>
+          <li><a href="#governanca">Governança</a></li>
+          <li><a href="#processos">Processos</a></li>
+          <li><a href="#kpis">Métricas</a></li>
+          <li><a href="#projeto">Projeto</a></li>
+          <li><a href="#reflexao">Reflexões</a></li>
+        </ul>
+
+        <div class="nav__acoes">
+          <button class="tema-btn" id="temaBtn" title="Alternar tema claro/escuro" aria-label="Alternar tema">A</button>
+          <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <!-- ==================== HERO ==================== -->
+      <section class="hero">
+        <div class="hero__grid">
+          <div class="hero__conteudo">
+            <p class="eyebrow">Empresa de software · Governança de TI · AgroTech</p>
+            <h1>
+              Governança de TI <em>a serviço</em> da decisão no agronegócio
+            </h1>
+            <p class="hero__texto" id="heroDesc"></p>
+            <div class="hero__ctas">
+              <a class="btn btn--primario" href="#empresa">Conheça a empresa</a>
+              <a class="btn btn--texto" href="#projeto">Ver projeto simulado →</a>
+            </div>
+          </div>
+
+          <aside class="hero__stats" id="heroStats" aria-label="Indicadores de referência"></aside>
+        </div>
+
+        <div class="hero__faixa">
+          <span>SAAS</span><span>Sistemas sob medida</span><span>Painéis analíticos</span><span>IoT</span><span>LGPD</span><span>DevOps</span>
+        </div>
+      </section>
+
+      <!-- ==================== EMPRESA ==================== -->
+      <section id="empresa" class="secao">
+        <header class="secao__cabecalho">
+          <p class="eyebrow"><span>01</span> — A Empresa</p>
+          <div>
+            <h2>Razão de ser</h2>
+            <p class="secao__desc">Identidade, missão e visão que orientam cada decisão de tecnologia.</p>
+          </div>
+        </header>
+
+        <blockquote class="ramo" id="ramo"></blockquote>
+
+        <div class="mv-grid">
+          <article class="mv">
+            <header class="mv__cabecalho">
+              <span class="mv__kicker">Missão</span>
+              <span class="mv__indice">M /</span>
+            </header>
+            <p id="missao"></p>
+          </article>
+          <article class="mv">
+            <header class="mv__cabecalho">
+              <span class="mv__kicker">Visão</span>
+              <span class="mv__indice">V /</span>
+            </header>
+            <p id="visao"></p>
+          </article>
+        </div>
+
+        <div class="chips" id="tags" aria-label="Áreas de atuação"></div>
+      </section>
+
+      <!-- ==================== GOVERNANÇA ==================== -->
+      <section id="governanca" class="secao secao--cinza">
+        <header class="secao__cabecalho">
+          <p class="eyebrow"><span>02</span> — Governança de TI</p>
+          <div>
+            <h2>Estrutura de decisão</h2>
+            <p class="secao__desc">Papéis, comitê, princípios e arquitetura definidos na Semana 4 da disciplina.</p>
+          </div>
+        </header>
+
+        <div class="governanca__grade">
+          <div class="painel-comite">
+            <div class="painel-comite__rotulo" id="comiteConceito"></div>
+            <ul class="painel-comite__membros" id="comiteMembros"></ul>
+            <p class="painel-comite__freq" id="comiteFrequencia"></p>
+          </div>
+
+          <div class="tabela-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Papel</th>
+                  <th>Responsável</th>
+                  <th>Atribuições</th>
+                </tr>
+              </thead>
+              <tbody id="tabelaCargos"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <h3 class="subde-titulo">Princípios de TI</h3>
+        <div class="grid grid--3" id="principios"></div>
+
+        <h3 class="subde-titulo">Infraestrutura de TI</h3>
+        <div class="grid grid--3" id="infraestrutura"></div>
+
+        <h3 class="subde-titulo">Arquitetura de TI</h3>
+        <div class="grid grid--3" id="arquitetura"></div>
+
+        <h3 class="subde-titulo">Priorização de investimentos</h3>
+        <div class="grid grid--3" id="investimento"></div>
+      </section>
+
+      <!-- ==================== PROCESSOS ==================== -->
+      <section id="processos" class="secao">
+        <header class="secao__cabecalho">
+          <p class="eyebrow"><span>03</span> — Processos críticos</p>
+          <div>
+            <h2>Cinco processos essenciais</h2>
+            <p class="secao__desc">Para uma empresa de software no agronegócio, disciplina operacional é requisito de sobrevivência.</p>
+          </div>
+        </header>
+
+        <ol class="processos" id="processos"></ol>
+      </section>
+
+      <!-- ==================== KPIs ==================== -->
+      <section id="kpis" class="secao secao--cinza">
+        <header class="secao__cabecalho">
+          <p class="eyebrow"><span>04</span> — Métricas</p>
+          <div>
+            <h2>KPIs de referência</h2>
+            <p class="secao__desc">Indicadores revisados periodicamente pelo comitê para avaliar desempenho e progresso.</p>
+          </div>
+        </header>
+
+        <div class="painel-kpis" id="kpis"></div>
+      </section>
+
+      <!-- ==================== PROJETO ==================== -->
+      <section id="projeto" class="secao">
+        <header class="secao__cabecalho">
+          <p class="eyebrow"><span>05</span> — Projeto simulado</p>
+          <div>
+            <h2>Caso de aplicação prática</h2>
+            <p class="secao__desc">Como a AgriGov aplica suas definições de governança em um projeto real.</p>
+          </div>
+        </header>
+
+        <div class="caso">
+          <div class="caso__dados" id="projetoDestaques"></div>
+
+          <div class="caso__objetivo" id="projetoObjetivo">
+            <p class="eyebrow">Objetivo do projeto</p>
+            <p class="caso__objetivo-texto"></p>
+          </div>
+
+          <div class="caso__etapas">
+            <p class="eyebrow">Etapas</p>
+            <ol class="timeline" id="timeline"></ol>
+          </div>
+
+          <div class="caso__resultado">
+            <p class="eyebrow">Resultado esperado</p>
+            <p class="caso__resultado-texto" id="projetoResultado"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== REFLEXÕES ==================== -->
+      <section id="reflexao" class="secao secao--cinza">
+        <header class="secao__cabecalho">
+          <p class="eyebrow"><span>06</span> — Reflexões</p>
+          <div>
+            <h2>Perguntas críticas</h2>
+            <p class="secao__desc">As respostas que sustentam o modelo de governança da AgriGov.</p>
+          </div>
+        </header>
+
+        <div class="perguntas" id="perguntas"></div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="rodape__grade">
+        <div class="rodape__marca">
+          <svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true">
+            <rect x="2" y="2" width="28" height="28" rx="7" fill="none" stroke="currentColor" stroke-width="2" />
+            <rect x="9" y="9" width="14" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.6" />
+            <circle cx="16" cy="16" r="2.6" fill="currentColor" />
+          </svg>
+          <div class="rodape__marca-texto">
+            <strong>AGRI<span>GOV</span></strong>
+            <small>Software Solutions</small>
+          </div>
+        </div>
+
+        <div class="rodape__col">
+          <h4>Institucional</h4>
+          <p>Empresa simulada de desenvolvimento de software para o agronegócio, com governança de TI integrada.</p>
+        </div>
+
+        <div class="rodape__col">
+          <h4>Equipe</h4>
+          <p>Brian G. M. Silva · José Carlos Souza · Lucas Antônio · Nicolas Alves.</p>
+        </div>
+
+        <div class="rodape__col">
+          <h4>Publicação</h4>
+          <p>Site estático publicado via GitHub Pages.<br /><a id="linkGithub" href="#" target="_blank" rel="noopener">#</a></p>
+        </div>
+      </div>
+      <div class="rodape__base">
+        <span>© 2026 AgriGov Software Solutions</span>
+        <span>Atividade acadêmica — Prof. Fábio Corsini</span>
+      </div>
+    </footer>
+
+    <script src="js/dados.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
