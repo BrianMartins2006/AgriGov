@@ -79,11 +79,6 @@ grupo antes da entrega. O site foi construído a partir das instruções do grup
 - **IA (apoio):** implementa a versão HTML/CSS/JS com navegação, animações de KPIs, tema
   claro/escuro e menu responsivo, atendendo ao pedido do grupo.
 
-### Interação 6 — Identidade visual
-
-- **Grupo:** solicita um visual mais profissional e que não pareça gerado de forma genérica.
-- **IA (apoio):** aplica um conjunto de ajustes de tipografia, paleta de cores, ícones SVG e
-  organização editorial, conforme a orientação do grupo; o grupo revisou e aprovou.
 
 
 - **Grupo:** relata erro 404 na publicação.
