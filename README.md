@@ -85,13 +85,6 @@ grupo antes da entrega. O site foi construído a partir das instruções do grup
 - **IA (apoio):** aplica um conjunto de ajustes de tipografia, paleta de cores, ícones SVG e
   organização editorial, conforme a orientação do grupo; o grupo revisou e aprovou.
 
-### Interação 7 — Correção de comportamento
-
-- **Grupo:** identifica que os KPIs apareciam zerados.
-- **IA (apoio):** corrige a animação dos indicadores e adiciona uma proteção para que os
-  valores nunca permaneçam zerados; o grupo validou o resultado.
-
-### Interação 8 — Publicação
 
 - **Grupo:** relata erro 404 na publicação.
 - **IA (apoio):** diagnostica a causa (arquivos dentro de subpasta, sem `index.html` na raiz),
