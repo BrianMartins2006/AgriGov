@@ -84,3 +84,5 @@ grupo antes da entrega. O site foi construído a partir das instruções do grup
 - **Grupo:** relata erro 404 na publicação.
 - **IA (apoio):** diagnostica a causa (arquivos dentro de subpasta, sem `index.html` na raiz),
   reorganiza a estrutura do repositório a pedido do grupo e o grupo publicou o resultado.
+
+  https://docs.google.com/document/d/1OJHAHZo21impIAt4do6VpdYBHGSZ2JzuHXQox3vGhe4/edit?usp=sharing
