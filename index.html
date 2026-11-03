@@ -48,6 +48,7 @@
           <li><a href="#kpis">Métricas</a></li>
           <li><a href="#projeto">Projeto</a></li>
           <li><a href="#reflexao">Reflexões</a></li>
+          <li><a href="#servicos">Serviços</a></li>
         </ul>
 
         <div class="nav__acoes">
@@ -167,7 +168,7 @@
           </div>
         </header>
 
-        <ol class="processos" id="processos"></ol>
+        <ol class="processos" id="listaProcessos"></ol>
       </section>
 
       <!-- ==================== KPIs ==================== -->
@@ -180,7 +181,7 @@
           </div>
         </header>
 
-        <div class="painel-kpis" id="kpis"></div>
+        <div class="painel-kpis" id="painelKpis"></div>
       </section>
 
       <!-- ==================== PROJETO ==================== -->
@@ -189,7 +190,7 @@
           <p class="eyebrow"><span>05</span> — Projeto simulado</p>
           <div>
             <h2>Caso de aplicação prática</h2>
-            <p class="secao__desc">Como a AgriGov aplica suas definições de governança em um projeto real.</p>
+            <p class="secao__desc">Como a AgriGov aplica suas definições de governança em um projeto simulado.</p>
           </div>
         </header>
 
@@ -225,6 +226,84 @@
 
         <div class="perguntas" id="perguntas"></div>
       </section>
+      <!-- ==================== GESTÃO DE SERVIÇOS ==================== -->
+      <section id="servicos" class="secao servicos" aria-labelledby="servicosTitulo">
+        <header class="secao__cabecalho">
+          <p class="eyebrow"><span>07</span> — Gerenciando serviços</p>
+          <div>
+            <h2 id="servicosTitulo">Como cuidamos dos nossos serviços</h2>
+            <p class="secao__desc">Atendimento organizado, mudanças controladas e melhoria contínua no caso CoffeeDecision.</p>
+          </div>
+        </header>
+
+        <aside class="servicos__aviso" aria-label="Contexto acadêmico">
+          <strong>Simulação acadêmica · Atividade Paralela 2</strong>
+          <p>O incidente, os prazos e as metas desta seção são hipóteses propostas para a disciplina Gestão de Sistemas de Informação, do IFSULDEMINAS — Campus Machado, Prof. Fábio Corsini. CoffeeDecision é um projeto simulado de apoio à previsão de safras e ao controle financeiro da Cooperativa Agroindustrial Café do Sul; suas funcionalidades não estão implementadas neste site institucional.</p>
+        </aside>
+
+        <article class="servicos__bloco">
+          <h3>01 / Qual serviço estamos protegendo?</h3>
+          <p>No cenário hipotético, o painel de previsão de safras do CoffeeDecision ficou fora do ar por quatro horas, prejudicando as consultas de gestores e cooperados. Lucas Antônio coordenará a resposta, apoiado por Nicolas Alves, Brian Gustavo M. Silva e José Carlos Souza.</p>
+        </article>
+
+        <article class="servicos__bloco">
+          <h3>02 / Como atender sem improvisar?</h3>
+          <div class="tabela-wrap" role="region" aria-label="Etapas do atendimento" tabindex="0">
+            <table>
+              <caption>Do registro do incidente à prevenção de novas ocorrências</caption>
+              <thead><tr><th scope="col">Momento</th><th scope="col">Ação da empresa</th><th scope="col">Responsável</th><th scope="col">Registro</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Receber e registrar</th><td>Centralizar relatos, horário, usuários e evidências em um único registro.</td><td>Lucas Antônio</td><td>Registro do incidente e histórico de contatos.</td></tr>
+                <tr><th scope="row">Avaliar impacto e prioridade</th><td>Classificar como crítico pela indisponibilidade de função essencial e impacto na cooperativa.</td><td>Lucas e Nicolas</td><td>Prioridade, impacto e responsável definidos.</td></tr>
+                <tr><th scope="row">Restabelecer o serviço</th><td>Verificar logs e versão recente; aplicar recuperação segura ou reverter a última alteração, se pertinente.</td><td>Nicolas, Brian e José Carlos</td><td>Ações técnicas e horário de restauração.</td></tr>
+                <tr><th scope="row">Comunicar e confirmar</th><td>Atualizar a cooperativa durante o atendimento e validar o painel com o usuário responsável.</td><td>Lucas Antônio</td><td>Mensagens e confirmação do cliente.</td></tr>
+                <tr><th scope="row">Investigar e prevenir</th><td>Analisar logs, mudanças e testes; documentar causa provável e plano preventivo.</td><td>Nicolas, Brian e José Carlos</td><td>Relatório do problema e ações preventivas.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="servicos__grade">
+            <div class="servicos__card"><h4>Canais e primeira resposta</h4><p>Canal principal: e-mail de suporte institucional <strong>a definir</strong>. Alternativa: telefone corporativo. Hipótese de atendimento: dias úteis, das <strong>8h às 18h</strong>, com primeira resposta a incidentes críticos em <strong>até 1 hora nesse período</strong>.</p><p>A triagem centralizada em Lucas torna o prazo viável para uma equipe pequena. Esse prazo não representa promessa de resolução.</p></div>
+            <div class="servicos__card"><h4>Comunicação durante o atendimento</h4><p>A cada <strong>60 minutos durante o atendimento</strong>, informar impacto conhecido, medidas em andamento, situação atual e horário da próxima atualização. Não anunciar previsões de recuperação não confirmadas enquanto a causa estiver em investigação.</p></div>
+            <div class="servicos__card"><h4>Incidente e problema</h4><p><strong>Incidente:</strong> recuperar a consulta às previsões e confirmar a normalização com o cliente.</p><p><strong>Problema:</strong> investigar posteriormente a causa raiz e adotar medidas para reduzir novas ocorrências.</p></div>
+          </div>
+        </article>
+
+        <article class="servicos__bloco">
+          <h3>03 / Como mudar sem aumentar o problema?</h3>
+          <p><strong>Pedido e decisão.</strong> Na hipótese de a cooperativa solicitar a exportação das previsões de safra em PDF ainda nesta semana, o grupo negociará um relatório simplificado, sujeito à estabilização do serviço e à avaliação de riscos e recursos. Se isso não for possível, a implantação será adiada. Lucas conduz a negociação e o Comitê de TI autoriza a mudança normal.</p>
+          <div class="tabela-wrap" role="region" aria-label="Política de mudanças" tabindex="0">
+            <table>
+              <caption>Política de mudanças para o CoffeeDecision</caption>
+              <thead><tr><th scope="col">Categoria</th><th scope="col">Exemplo</th><th scope="col">Autorização e condições</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Padrão</th><td>Atualização rotineira de conteúdo informativo, com roteiro já aprovado.</td><td>Lucas, conforme procedimento pré-aprovado, com registro e verificação.</td></tr>
+                <tr><th scope="row">Normal</th><td>Inclusão da exportação de relatórios PDF.</td><td>Comitê de TI, após avaliação de risco, impacto, testes e plano de reversão.</td></tr>
+                <tr><th scope="row">Emergencial</th><td>Correção urgente para recuperar o painel indisponível.</td><td>Lucas e Nicolas, com registro, teste mínimo seguro e revisão posterior pelo Comitê.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="servicos__card"><h4>Liberação, privacidade e reversão</h4><p>Antes da implantação, validar os dados do relatório e impedir a exposição de informações de outros cooperados. Em caso de falha, restaurar a versão anterior e testar novamente a consulta. Lucas comunicará escopo, data, riscos e resultado ao cliente. São medidas propostas para o serviço simulado, não funcionalidades disponíveis neste site.</p></div>
+          <p><strong>COBIT 2019:</strong> BAI (Construir, Adquirir e Implementar) orienta a avaliação, os testes e a implantação controlada de mudanças. DSS (Entregar, Servir e Suportar) orienta o tratamento de incidentes, a continuidade do serviço e a comunicação com o usuário.</p>
+        </article>
+
+        <article class="servicos__bloco">
+          <h3>04 / Como demonstrar melhoria?</h3>
+          <div class="tabela-wrap" role="region" aria-label="Indicadores de melhoria" tabindex="0">
+            <table>
+              <caption>Metas propostas para o caso simulado, adaptadas da Atividade Paralela 1</caption>
+              <thead><tr><th scope="col">Indicador</th><th scope="col">Cálculo / medição</th><th scope="col">Meta proposta</th><th scope="col">Fonte</th><th scope="col">Frequência / responsável</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">MTTR — tempo médio de reparação</th><td>Soma do tempo para restaurar incidentes ÷ número de incidentes.</td><td>Até 2 horas em média.</td><td>Registros de incidentes.</td><td>Mensal; Nicolas.</td></tr>
+                <tr><th scope="row">CFR — taxa de falhas em mudanças</th><td>Mudanças que causam falha crítica ou reversão ÷ total de mudanças implantadas × 100.</td><td>Abaixo de 10%.</td><td>Histórico de deploys e incidentes.</td><td>Mensal; Brian e José Carlos.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p><strong>ITIL e ISO/IEC 20000-1.</strong> As práticas da ITIL ajudam a organizar incidentes, problemas, mudanças e comunicação com clientes. A ISO/IEC 20000-1 acrescenta requisitos formais para um sistema de gestão de serviços, com avaliação e melhoria contínua.</p>
+          <p>Com uma equipe reduzida, a direção deve primeiro estruturar e medir os processos, deixando a preparação para certificação para uma etapa futura. O benefício esperado é maior previsibilidade no atendimento; a limitação é o esforço de documentação e acompanhamento.</p>
+          <div class="servicos__aviso"><h4>Próximos 30 dias</h4><p>Lucas organizará um modelo único de registro de incidentes e mudanças para o caso simulado e revisará os resultados com a equipe. Evidências esperadas: modelos preenchidos, levantamento inicial de MTTR/CFR e plano de melhoria.</p></div>
+        </article>
+        <p class="servicos__fonte">Equipe: Brian Gustavo M. Silva · José Carlos Souza · Lucas Antônio · Nicolas Alves.<br /><a href="https://github.com/BrianMartins2006/AgriGov">Código-fonte do site institucional</a> · <a href="#servicos">Link direto para esta seção</a></p>
+      </section>
     </main>
 
     <footer class="rodape">
@@ -252,6 +331,9 @@
         </div>
 
         <div class="rodape__col">
+          <h4>Projeto acadêmico</h4>
+          <p><a id="linkGithub" href="https://github.com/BrianMartins2006/AgriGov">Código-fonte no GitHub</a></p>
+          <p><a href="#servicos">Como cuidamos dos nossos serviços</a></p>
         </div>
       </div>
       <div class="rodape__base">

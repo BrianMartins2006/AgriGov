@@ -20,6 +20,13 @@ python3 -m http.server 8000
 
 ## Estrutura
 
+A seção **Como cuidamos dos nossos serviços**, acessível pelo menu **Serviços** ou
+pelo fragmento `#servicos`, apresenta a Atividade Paralela 2: caso CoffeeDecision,
+atendimento a incidentes, política de mudanças e indicadores MTTR/CFR. O conteúdo
+é uma simulação acadêmica; o site não implementa o painel ou a exportação de PDF.
+Após a publicação no GitHub Pages, o endereço previsto para a seção é
+`https://BrianMartins2006.github.io/AgriGov/#servicos`.
+
 ```
 index.html          estrutura da página
 css/style.css       design system (claro/escuro)

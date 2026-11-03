@@ -119,7 +119,7 @@
 
     /* processos */
     html(
-      '#processos',
+      '#listaProcessos',
       D.processos
         .map(function (p) {
           return (
@@ -134,7 +134,7 @@
 
     /* KPIs — painel métrico */
     html(
-      '#kpis',
+      '#painelKpis',
       D.kpis
         .map(function (k) {
           return (
@@ -195,9 +195,7 @@
 
     /* rodapé */
     var link = $('#linkGithub')
-    var url = 'https://' + D.github.usuario + '.github.io/' + D.github.repositorio + '/'
-    link.textContent = url
-    link.href = url
+    link.href = 'https://github.com/BrianMartins2006/AgriGov'
   }
 
   /* ---------- acordeão ---------- */
@@ -243,7 +241,7 @@
   }
 
   function ligarKpis() {
-    var secao = $('#kpis')
+    var secao = $('#painelKpis')
     if (!secao) return
     var animado = false
 
